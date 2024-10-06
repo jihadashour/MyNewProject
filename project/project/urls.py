@@ -1,3 +1,4 @@
+from django.conf.urls import include
 """
 URL configuration for project project.
 
@@ -19,4 +20,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('pages.urls'))
 ]
